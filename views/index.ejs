@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+ 
+       <h1 class="header">Makeup Site</h1>
+    
+      
+          <span><% data.map((item)=> { %></span>
+     
+        <main class="detail">
+          <div class="image">
+          <img src=" <%=item.image_link %>" width="200px" height="200px" />
+          </div>
+             <ul>
+            <li>
+              id: <%=item.id %> 
+            </li>
+            <li>
+            brand:<%= item.brand %>
+            </li>
+            <li>
+            price: <span><%= item.price %> <%= item.price_sign %></span>
+            </li>
+            <li>
+             description: <%= item.description %>
+              </li>
+              <li>
+                 <a href="<%= item.product_link %>" >To Product</a>
+            </li>
+          </ul>
+        </main>
+
+        <% }) %>
+    </div>
+  </body>
+</html>

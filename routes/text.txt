@@ -1,0 +1,7 @@
+
+id:response.data.id,
+brand:response.data.brand,
+price:response.data.price,
+price_sign:response.data.price_sign,
+image: response.data.image,
+description: response.data.description
